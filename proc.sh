@@ -1,5 +1,5 @@
 #!/bin/bash
-URL='https://reserve.gmuc.co.kr/user/camp/campReservation.do?menu=d&menuFlag=C'
+URL='https://------'
 PERIOD=100
 SLEEP_PERIOD=3600
 while((1))
@@ -11,7 +11,7 @@ do
 
 	if ((COUNT > 0)) 
 	then
-		MESSAGE="$((COUNT)) 도덕산 캠핑장"
+		MESSAGE="$((COUNT) ..."
 		echo "$MESSAGE"
 		./LINE.sh "${MESSAGE}"
 		((NOTIFY_COUNT=NOTIFY_COUNT+1))
